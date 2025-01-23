@@ -1,4 +1,7 @@
-﻿$installedapps = get-AppxPackage
+
+Import-Module -Name 'Appx' -UseWindowsPowerShell -Force 
+ 
+$installedapps = get-AppxPackage
 $invalidNames = '*ms-resource*', '*DisplayName*'
 $aumidList = @()
 
